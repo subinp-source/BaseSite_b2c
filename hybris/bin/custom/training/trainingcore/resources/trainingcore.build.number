@@ -1,0 +1,11 @@
+#Ant properties
+#Wed May 03 03:37:16 CEST 2023
+version.api=2211
+vendor=hybris
+group.id=de.hybris.platform
+name=trainingcore
+description=trainingcore
+builddate=20230503 0332
+releasedate=20230309 2009
+version=2211.6
+module.name=platform-module
