@@ -5,15 +5,11 @@
 # Import Countries
 # Full country list conforming to ISO 3166-1 alpha-2
 #
-INSERT_UPDATE Country;isocode[unique=true];name[lang=en];active[default=true]
+
+# Language
+$lang=en_IN
+
+# Create Countries
+UPDATE Country;isocode[unique=true];name[lang=$lang]
 ;IN;"India"
 
-
-#
-# ISO 3166-2:US
-#
-INSERT_UPDATE Region;country(isocode);isocode[unique=true];isocodeShort;name[lang=en];active[default=true]
-;IN;IN-BG;"Banglore"
-;IN:IN-CNI;"Chennai"
-;IN;IN-KLT;"Kolkata"
-;IN;IN-DEH;"Delhi"

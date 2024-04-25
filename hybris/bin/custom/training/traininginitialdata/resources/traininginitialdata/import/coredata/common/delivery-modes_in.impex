@@ -1,0 +1,16 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+#
+# Import Delivery Modes / Zones
+#
+
+# Language
+$lang=en_IN
+
+# Zone Delivery Modes
+UPDATE ZoneDeliveryMode;code[unique=true];name[lang=$lang];description[lang=$lang]
+ ;premium-gross;"Premium-delivery";"1-2 working days"
+ ;premium-net;"Premium-delivery";"1-2 working days"
+ ;standard-gross;"Standard-delivery";"3-5 working days"
+ ;standard-net;"Standard-delivery";"3-5 working days"

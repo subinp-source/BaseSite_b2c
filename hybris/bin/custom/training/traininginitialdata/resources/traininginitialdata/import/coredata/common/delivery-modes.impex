@@ -20,6 +20,7 @@ INSERT_UPDATE Zone                  ; code[unique=true]               ; countrie
                                     ; ca                              ; CA
                                     ; japan                           ; JP
                                     ; china                           ; CN
+                                    ; india                           ; IN
                                     ; otherAsianRegions               ; VN,HK,KP,KR,MO,TW
 
 # Zone Delivery Modes

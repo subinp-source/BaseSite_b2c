@@ -16,6 +16,10 @@
 # ISO 3166-2:US
 #
 INSERT_UPDATE Region;country(isocode);isocode[unique=true];isocodeShort;name[lang=en];active[default=true]
+;IN;IN-BA;BA;"Banglore"
+;IN;IN-CH;CH;"Chennai"
+;IN;IN-DE;DE;"Delhi"
+;IN;IN-KO;KO;"Kolkata"
 ;US;US-AL;AL;"Alabama"
 ;US;US-AK;AK;"Alaska"
 ;US;US-AZ;AZ;"Arizona"
