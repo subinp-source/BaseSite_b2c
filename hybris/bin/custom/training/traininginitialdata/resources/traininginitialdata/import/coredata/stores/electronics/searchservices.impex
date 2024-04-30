@@ -4,13 +4,13 @@
 #
 # Import the search services configuration for the Electronics store
 #
-$productCatalog=electronicsProductCatalog
-$productCatalogVersion=catalogVersion(catalog(id[default='electronicsProductCatalog']),version[default='Staged'])[unique=true,default='electronicsProductCatalog:Staged']
-$languages=ja,en,de,zh
+$productCatalog=mobilesProductCatalog
+$productCatalogVersion=catalogVersion(catalog(id[default='mobileProductCatalog']),version[default='Staged'])[unique=true,default='mobileProductCatalog:Staged']
+$languages=ja,en,de,zh,en_IN
 $currencies=JPY,USD
-$storeUid=electronics
-$snIndexConfiguration=electronics
-$snIndexType=electronics-product
+$storeUid=mobiles
+$snIndexConfiguration=mobiles
+$snIndexType=mobiles-product
 
 INSERT_UPDATE SnIndexConfiguration ; id[unique=true]       ; name        ; user(uid) ; languages(isocode) ; currencies(isocode)
                                    ; $snIndexConfiguration ; Electronics ; anonymous ; $languages         ; $currencies

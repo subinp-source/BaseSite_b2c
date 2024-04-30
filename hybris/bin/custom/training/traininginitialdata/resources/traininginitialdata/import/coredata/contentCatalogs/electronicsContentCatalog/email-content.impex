@@ -4,7 +4,7 @@
 #
 # Import the CMS content for the Electronics site emails
 #
-$contentCatalog=electronicsContentCatalog
+$contentCatalog=mobileContentCatalog
 $contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
 $wideContent=CMSImageComponent,BannerComponent,SimpleBannerComponent,CMSLinkComponent,CMSParagraphComponent
 
