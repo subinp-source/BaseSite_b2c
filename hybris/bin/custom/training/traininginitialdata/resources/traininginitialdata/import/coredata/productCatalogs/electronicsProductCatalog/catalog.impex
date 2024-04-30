@@ -5,10 +5,10 @@
 # Import the Product Catalog and Classification Catalog
 #
 
-$productCatalog=electronicsProductCatalog
-$classificationCatalog=ElectronicsClassification
+$productCatalog=mobilesProductCatalog
+$classificationCatalog=MobilesClassification
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
-$languages=ja,en,de,zh
+$languages=ja,en,de,zh,en_IN
 
 # Product catalog
 INSERT_UPDATE Catalog;id[unique=true]
