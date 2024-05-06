@@ -4,7 +4,7 @@
 #
 # Import the search services CronJob Trigger configuration for the Electronics Product Catalog
 #
-$snIndexType=electronics-product
+$snIndexType=mobiles-product
 
 INSERT FlexibleSearchSnIndexerItemSource ; &indexerItemSourceID ; query
                                          ; $snIndexType-full    ; "SELECT {p:pk} FROM {Product AS p LEFT JOIN ArticleApprovalStatus AS a ON {p:approvalStatus} = {a:pk}} WHERE {a:code} = 'approved'"

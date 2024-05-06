@@ -2,13 +2,13 @@
 # Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
 # -----------------------------------------------------------------------
 # 
-# Create the Responsive Electronics BaseStore
+# Create the Responsive mobiles BaseStore
 #
-$productCatalog=electronicsProductCatalog
-$classificationCatalog=ElectronicsClassification
+$productCatalog=mobilesProductCatalog
+$classificationCatalog=MobilesClassification
 $currencies=JPY,USD
 $net=false
-$storeUid=electronics
+$storeUid=mobiles
 $defaultCurrency=USD
 $languages=ja,en,de,zh
 $defaultLanguage=en
@@ -26,16 +26,16 @@ $returnProcessCode=return-process
 $checkoutFlowGroup=responsiveCheckoutGroup
 
 INSERT_UPDATE PromotionGroup;Identifier[unique=true];
-;electronicsPromoGrp;
+;mobilesPromoGrp;
 
 # Base Store
 INSERT_UPDATE BaseStore;uid[unique=true];catalogs(id);currencies(isocode);net;taxGroup(code);storelocatorDistanceUnit(code);defaultCurrency(isocode);languages(isocode);defaultLanguage(isocode);deliveryCountries(isocode);billingCountries(isocode);submitOrderProcessCode;pickupInStoreMode(code);customerAllowedToIgnoreSuggestions;paymentProvider;expressCheckoutEnabled;maxRadiusForPoSSearch;checkoutFlowGroup;createReturnProcessCode;
 ;$storeUid;$productCatalog,$classificationCatalog;$currencies;$net;jp-taxes;km;$defaultCurrency;$languages;$defaultLanguage;$deliveryCountries;$billingCountries;$orderProcessCode;$pickupInStoreMode;$customerAllowedToIgnoreSuggestions;$paymentProvider;$expressCheckoutEnabled;300;$checkoutFlowGroup;$returnProcessCode;
 
 INSERT_UPDATE BaseStore2DeliveryModeRel;source(uid)[unique=true];target(code)[unique=true]
-;electronics;premium-net
-;electronics;standard-net
-;electronics;premium-gross
-;electronics;standard-gross
-;electronics;pickup
-;electronics;free-standard-shipping
+;mobiles;premium-net
+;mobiles;standard-net
+;mobiles;premium-gross
+;mobiles;standard-gross
+;mobiles;pickup
+;mobiles;free-standard-shipping
